@@ -251,3 +251,4 @@ function updateProductInDom(item) {
 // 4. Добавление стилистики
 
 // test for commits (git)
+// test2 for commits (git)
