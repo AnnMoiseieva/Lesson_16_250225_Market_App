@@ -208,7 +208,7 @@ function addProductToDom(item) {
     </span>
     <button class="btn btn-danger" onclick="stock.removeItem('${item.name}', ${1})">-</button>
     <button id="plusBtn-${item.name}" class="btn btn-danger">+</button>
-    <button id="deleteBtn-${item.name}" class="btn btn-danger">Delete</button>
+    <button id="deleteBtn-${item.name}" class="btn btn-danger" >Delete</button>
   `;
     // Второй способ решения действия, связанного с удалением элемента списка
 
@@ -227,11 +227,9 @@ function addProductToDom(item) {
         stock.removeItem(item.name, actualQuantity);
         li.remove();
     }
-
     plusBtn.onclick = () => {
         stock.addItem({ ...item, quantity: 1 })
     }
-   
 }
 
 function deleteProductFromDom(itemName) {
@@ -251,3 +249,5 @@ function updateProductInDom(item) {
 // 2. Логика, которая понадобится для работы приложения
 // 3. Соединение логики и HTML
 // 4. Добавление стилистики
+
+// test for commits (git)
